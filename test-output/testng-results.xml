@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="98617" started-at="2020-04-08T19:09:46 IST" finished-at="2020-04-08T19:11:25 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="98617" started-at="2020-04-08T19:09:46 IST" finished-at="2020-04-08T19:11:25 IST">
+      <class name="gtm.testcases.TC_001_GTM">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="launchBrowser" is-config="true" duration-ms="8203" started-at="2020-04-08T19:09:47 IST" finished-at="2020-04-08T19:09:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tagmanager.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="createGTM(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gtm.testcases.TC_001_GTM@74650e52]" name="createGTM" duration-ms="38215" started-at="2020-04-08T19:09:55 IST" data-provider="fetchdata" finished-at="2020-04-08T19:10:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[projects.vw@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nhy65tgB@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2018 Recruiting Landing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TEST001]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Event]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contact Us Page Clicks]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Clicks On Visit Locations Link]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Click URL]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Click URL]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[TEST001]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Click Element]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[body > div.mkd-wrapper > div > div.mkd-content > div > div.mkd-full-width > div > div > div > div.vc_row.wpb_row.vc_row-fluid.mkd-section.RowBG.vc_custom_1580849390650.mkd-content-aligment-left.mkd-grid-section > div > div > div.wpb_column.vc_column_container.vc_col-sm-8 > div > div > div.wpb_text_column.wpb_content_element > div > p:nth-child(3) > a]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at gtm.pages.TriggerPage.verifyDuplicateTriggerName(TriggerPage.java:24)
+at gtm.testcases.TC_001_GTM.newTagAndTrigger(TC_001_GTM.java:58)
+at gtm.testcases.TC_001_GTM.createGTM(TC_001_GTM.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGTM -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="closeBrowser" is-config="true" duration-ms="2079" started-at="2020-04-08T19:10:33 IST" finished-at="2020-04-08T19:10:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="launchBrowser" is-config="true" duration-ms="7075" started-at="2020-04-08T19:10:35 IST" finished-at="2020-04-08T19:10:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tagmanager.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="createGTM(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gtm.testcases.TC_001_GTM@74650e52]" name="createGTM" duration-ms="33042" started-at="2020-04-08T19:10:42 IST" data-provider="fetchdata" finished-at="2020-04-08T19:11:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[projects.vw@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nhy65tgB@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2018 Recruiting Landing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TEST002]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Event]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Contact Us Page Clicks]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Clicks On Visit Locations Link]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Click URL]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Click URL]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[TEST002]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Click Element]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[body > div.mkd-wrapper > div > div.mkd-content > div > div.mkd-full-width > div > div > div > div.vc_row.wpb_row.vc_row-fluid.mkd-section.RowBG.vc_custom_1580849390650.mkd-content-aligment-left.mkd-grid-section > div > div > div.wpb_column.vc_column_container.vc_col-sm-8 > div > div > div.wpb_text_column.wpb_content_element > div > p:nth-child(3) > a]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<true> but was:<false>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:174)
+at junit.framework.Assert.assertEquals(Assert.java:181)
+at gtm.pages.TriggerPage.verifyDuplicateTriggerName(TriggerPage.java:24)
+at gtm.testcases.TC_001_GTM.newTagAndTrigger(TC_001_GTM.java:58)
+at gtm.testcases.TC_001_GTM.createGTM(TC_001_GTM.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGTM -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="closeBrowser" is-config="true" duration-ms="2079" started-at="2020-04-08T19:11:15 IST" finished-at="2020-04-08T19:11:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="launchBrowser" is-config="true" duration-ms="6658" started-at="2020-04-08T19:11:17 IST" finished-at="2020-04-08T19:11:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tagmanager.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="writeReport()[pri:2, instance:gtm.testcases.TC_001_GTM@74650e52]" name="writeReport" duration-ms="1" started-at="2020-04-08T19:11:24 IST" finished-at="2020-04-08T19:11:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:gtm.testcases.TC_001_GTM@74650e52]" name="closeBrowser" is-config="true" duration-ms="724" started-at="2020-04-08T19:11:24 IST" finished-at="2020-04-08T19:11:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- gtm.testcases.TC_001_GTM -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
